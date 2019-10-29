@@ -1,0 +1,19 @@
+/**
+/// _palette.scss
+///
+/// defines all colors for the Heartland Hackers POC application
+///
+/// @package hh-frontend
+**/
+
+/// colors
+$hh-sky: #60C8D6;
+$hh-lavender: #5F68B0;
+$hh-salmon: #F15C5B;
+$hh-salmon-tint: darken($hh-salmon, 15%);
+
+/// black and white
+$hh-transparent: rgba(0,0,0,0);
+$hh-white: #fff;
+$hh-faint-grey: #E6E7E8;
+$hh-dark-grey: #3A3A3A;
