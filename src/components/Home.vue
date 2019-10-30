@@ -3,7 +3,7 @@
     <b-container class="text-center">
       <!-- logo -->
       <div id="hh-logo-container-main">
-        <img :src="logoWhite" alt="Competitor Statement Estimator">
+        <Logo :fill="'#1C9AAF'"/>
       </div> <!-- END logo -->
       <h1 id="hh-main-title">Competitor Fee Estimator</h1>
       <p id="hh-main-desc">Estimate the statement fees assessed by a competing payment processor, and compare them to Heartland's rates.</p>
@@ -18,9 +18,13 @@
 
 <script>
 import { EventBus } from '../notifiers/event-bus.js'
+import Logo from './Logo'
 
 export default {
   name: 'Home',
+  components: {
+    Logo
+  },
   data () {
     return {
       logoWhite: require('@/assets/logo-white.svg'),
@@ -35,18 +39,12 @@ export default {
 
 <style lang="scss">
 #hh-home {
-  padding-top: 100px;
   color: $hh-white;
-  min-height: 100vh;
-  // background: rgb(96,200,214);
-  // background: linear-gradient(13deg, rgba(96,200,214,1) 30%, rgba(79,90,158,1) 100%);
-  .btn-primary {
-    background-color: $hh-white !important;
-    color: $hh-dark-grey !important;
-    &:hover {
-      background-color: $hh-dark-grey !important;
-      color: $hh-white !important;
-    }
+  height: 100vh;
+  background: $hh-indigo;
+  position: relative;
+  .container {
+    @include vertical-center();
   }
 }
 #hh-logo-container-main {
@@ -78,6 +76,7 @@ export default {
   }
 }
 #hh-main-cta {
+  margin-bottom: 0;
   .btn-primary {
     margin-top: 2em;
   }

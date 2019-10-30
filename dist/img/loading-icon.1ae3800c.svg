@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 130">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #21243a;
+                animation: moveMagnifyingGlass 5s infinite;
+                animation-delay: 0;
+            }
+            .cls-2 {
+                fill: none;
+            }
+            @keyframes moveMagnifyingGlass {
+              0% {
+                transform: translate(0, 0);
+              }
+              25% {
+                transform: translate(-32px, -26px);
+              }
+              50% {
+                transform: translate(-5px, 30px);
+              }
+              75% {
+                transform: translate(18px, -10px);
+              }
+            }
+        </style>
+    </defs>
+    <title>Asset 4</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="cls-1" d="M93.92,91.39,79.5,77a3.25,3.25,0,0,0-4.6,4.59L89.33,96a3.25,3.25,0,0,0,4.59-4.6Z" />
+            <path class="cls-1" d="M72.08,73.12a23.65,23.65,0,1,0-1,1l3.33,3.34L74.9,77l.51-.52Zm-33-.56a22.3,22.3,0,1,1,31.53,0A22.33,22.33,0,0,1,39.09,72.56Z" />
+            <rect class="cls-2" width="126" height="130" />
+        </g>
+    </g>
+</svg>
